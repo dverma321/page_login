@@ -1,0 +1,340 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.justregistration{
+  color: greenyellow;
+}
+
+/*  Registration form */
+
+.form-label{
+  color: lightcoral;
+}
+
+
+.signup-form {
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  background: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background: #0056b3;
+}
+
+.button-color{
+  background-color: lightcoral;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1%;
+  margin: 1%;
+}
+
+.button-color:hover{
+  background-color: lightgreen;  
+  
+}
+
+.navlink_login{
+  text-decoration: none;  
+  text-transform: uppercase;
+  margin: 1%; 
+  color: lightcoral;
+
+}
+
+/* contact us  */
+
+/* Contact Us Main Body */
+.contactus_mainbody {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Contact Info Item */
+.contact_info_item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.contact_info_item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact_title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact_info_text {
+  font-size: 16px;
+  color: #666;
+}
+
+/* About Me Post Body */
+
+/* Container Style */
+.container.emp-profile {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image Style */
+.profile-img img {
+  width: 100%;
+  background-color: lightgreen;
+  padding: 1%;
+  
+}
+
+/* Profile Head Style */
+.profile-head {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.profile-head h5 {
+  color: #343a40;
+}
+
+.profile-head h6 {
+  color: #6c757d;
+}
+
+.profile-rating span {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Nav Tabs Style */
+/* Add this CSS to your stylesheet */
+.navbar {
+  background-color: #6c757d; /* Set the background color for the navbar */
+}
+
+.navbar-brand {
+  color: darkslategrey; /* Set the color of the navbar brand text */
+  font-weight: bold; /* Set the font weight of the navbar brand text */
+}
+
+.navbar-toggler-icon {
+  background-color: none; /* Set the color of the navbar toggler icon */
+}
+
+.nav-item  {
+  color: wheat; /* Set the color of the nav links */
+  margin: 0 10px; /* Add some margin to the nav links */
+  }
+
+.nav-link .active:hover{
+  color: #fff;
+}
+
+.nav-item:hover{
+  color: white;
+}
+
+/* Add more custom styles as needed */
+
+/* Edit Profile Button Style */
+.profile-edit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-edit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Profile Work Style */
+.profile-work {
+  margin-top: 20px;
+}
+
+.profile-work p {
+  font-size: 14px;
+  color: #495057;
+}
+
+.profile-work a {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.profile-work a:hover {
+  text-decoration: underline;
+}
+
+/* About Info Style */
+.about-info {
+  padding-left: 20px;
+}
+
+.about-info label {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.about-info p {
+  color: #495057;
+}
+
+/* Tab Content Style */
+.tab-content {
+  padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .profile-head {
+    margin-bottom: 20px;
+  }
+
+  .nav-tabs {
+    margin-top: 0;
+  }
+
+  .profile-img {
+    margin-bottom: 20px;
+  }
+
+  .profile-edit-btn,
+  .profile-work {
+    margin-top: 20px;
+  }
+}
+
+/* welcome user  */
+
+.welcomeBlock{
+  padding: 1%;
+  background-color: lightgray;
+
+}
+
+.welcomeuser{
+  text-align: center;
+  color: white;  
+  text-shadow:2px 2px 4px #000;
+  margin-bottom: 30px; /* Adjust the margin as needed */
+
+}
+
+.welcomeuser h2{
+ text-transform: uppercase;
+ color: lightcoral;
+ text-shadow: none;
+ letter-spacing: 2px;
+}
+
+.welcomeBlock p{
+  text-align: center;
+  color: #000;
+  font-size: small;
+}
+
+.welcomeBlock {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
