@@ -8,7 +8,8 @@ const app = express();
 app.use(cors(
     {
         origin:"https://divyanshuverma.netlify.app",
-        methods:["GET", "POST"]
+        methods:["GET", "POST"],
+        credentials: true
     }
 ));
 app.use(cookieParser());
