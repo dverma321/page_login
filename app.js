@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin:"https://logindatabase-j1ud.onrender.com",
+        origin:"https://divyanshuverma.netlify.app",
         methods:["GET", "POST"]
     }
 ));
