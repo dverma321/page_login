@@ -7,6 +7,8 @@ import { userContext } from '../App'
 
 const Login = () => {
 
+  const baseUrl = "https://logindatabase-j1ud.onrender.com"; //backend url
+
   const {state, dispatch} = useContext(userContext)
 
   const navigation = useNavigate();
@@ -17,7 +19,7 @@ const Login = () => {
   const loginUser = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("/signin" , {
+    const res = await fetch(`${baseUrl}/signin` , {
       method:"POST",
       headers: {
         "Content-Type":"application/json"
