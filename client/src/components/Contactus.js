@@ -16,6 +16,7 @@ const Contactus = () => {
 
           "Content-Type":"application/json"
         },
+        credentials: 'include', // Include this line
 
 
       });
