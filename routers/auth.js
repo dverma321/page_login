@@ -117,7 +117,7 @@ router.post('/signin', async (req, res) => {
                 httpOnly: true,
                 secure: true,
                 sameSite: 'none',
-                path: '/',
+                path: '/signin',
                 credentials: 'include'
             } )
 
