@@ -6,11 +6,12 @@ const Contactus = () => {
 
   const navigation = useNavigate();
   const [userData, setUserData] = useState({name:"", email:"", phone:"", message:""});
+  const baseUrl = "https://logindatabase-j1ud.onrender.com"; //backend url
 
   const callContactPage = async () => {
 
     try {
-      const res = await fetch('/getData', {
+      const res = await fetch('${baseUrl}/getData', {
         method:'GET',
         headers: {
 
