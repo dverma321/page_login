@@ -10,7 +10,14 @@ require('../db/conn');
 const User = require('../model/userSchema');
 
 // Use the cors middleware
-router.use(cors());
+router.use(cors(
+    {
+     origin:"https://divyanshuverma.netlify.app",
+        methods:'GET,HEAD,PUT,PATCH,POST,DELETE',
+        credentials: true, // set the cookie true
+        optionsSuccessStatus: 204     // Respond with a 204 status code for preflight requests
+    }
+));
 
 
 
