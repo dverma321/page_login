@@ -1,12 +1,17 @@
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const express = require('express');
+const cors = require('cors');
 const router = express.Router();
 const authenciate = require('../middleware/authenciate.js');
 
 
 require('../db/conn');
 const User = require('../model/userSchema');
+
+// Use the cors middleware
+router.use(cors());
+
 
 
 router.get("/", (req, res) => {
@@ -147,7 +152,7 @@ router.post('/signin', async (req, res) => {
 
 // about Me page
 
-router.get("/aboutme", authenciate, (req, res) => {
+router.get("/aboutme", cors(), authenciate, (req, res) => {
     console.log("Hello About me page, here we will fetch the data from Database");
     res.send(req.rootUser);
 });
@@ -163,7 +168,7 @@ router.get("/getData", authenciate, (req, res) => {
 
 // contactus page
 
-router.post("/contactus", authenciate, async (req, res) => {
+router.post("/contactus", cors(), authenciate, async (req, res) => {
 
     try{
 
