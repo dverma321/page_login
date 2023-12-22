@@ -125,11 +125,11 @@ router.post('/signin', async (req, res) => {
             const token = await userExits.generateAuthToken();
             console.log('Generated Token:', token);
             res.cookie("jwtoken", token, {
-                expires: new Date(Date.now() + 25940000),
+                expires: new Date(Date.now() + 259400000),
                 httpOnly: true,
                 secure: true,
                 sameSite: 'none',
-                path: '/signin',
+                path: '/',
                 credentials: 'include'
             } )
 
