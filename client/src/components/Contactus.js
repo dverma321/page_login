@@ -11,7 +11,7 @@ const Contactus = () => {
   const callContactPage = async () => {
 
     try {
-      const res = await fetch('/getData', {
+      const res = await fetch('${baseUrl}/getData', {
         method:'GET',
         headers: {
 
