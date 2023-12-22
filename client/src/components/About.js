@@ -12,7 +12,7 @@ const About = () => {
   const callAboutPage = async () => {
 
     try {
-      const res = await fetch('/aboutme', {
+      const res = await fetch(`${baseUrl}/getData`, {
         method:'GET',
         headers: {
           Accept:"application/json",
