@@ -7,11 +7,12 @@ const About = () => {
 
   const navigation = useNavigate();
   const [userData, setUserData] = useState();
+  const baseUrl = "https://logindatabase-j1ud.onrender.com"; //backend url
 
   const callAboutPage = async () => {
 
     try {
-      const res = await fetch('/aboutme', {
+      const res = await fetch('${baseUrl}/aboutme', {
         method:'GET',
         headers: {
           Accept:"application/json",
