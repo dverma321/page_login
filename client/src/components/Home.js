@@ -9,11 +9,12 @@ const App = () => {
 
   const [userName, setUserName] = useState('');
   const [show, setShow] = useState(false);
+  const baseUrl = "https://logindatabase-j1ud.onrender.com"; //backend url
     
   const callCustomerName = async () => {
 
     try {
-      const res = await fetch('/getData', {
+      const res = await fetch('${baseUrl}/getData', {
         method:'GET',
         headers: {
 
