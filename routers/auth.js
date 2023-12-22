@@ -168,7 +168,7 @@ router.get("/aboutme", cors(), authenciate, (req, res) => {
 // here /getData could be any route name for Home page and Contact Us
 
 
-router.get("/getData", cors(), authenciate, (req, res) => {
+router.get("/getData", authenciate, (req, res) => {
     console.log("Hello Contact page, here we will fetch the data from Database");
     res.send(req.rootUser);
 });
