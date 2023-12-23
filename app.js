@@ -51,9 +51,9 @@ app.get("/registration", (req, res) => {
     res.send("Hello Registration Page");
 });
 
-// app.get("/contactus", (req, res) => {
-//     res.send("Hello Contact Us Page");
-// });
+app.get("/contactus", (req, res) => {
+    res.send("Hello Contact Us Page");
+});
 
 app.get("/signin", (req, res) => {
     res.send("Hello Login Page");
