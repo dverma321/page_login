@@ -78,7 +78,7 @@ const Contactus = () => {
 
     try{
 
-      const res = await fetch(`${baseUrl}/contactus`, {
+      const res = await fetch(`${baseUrl}/getData/contactus`, {
         method:"POST",
         headers: {
           "Content-Type":"application/json"
