@@ -175,7 +175,7 @@ router.get("/getData", authenciate, (req, res) => {
 
 // contactus page
 
-router.post("/contactus", cors(), authenciate, async (req, res) => {
+router.post("/contactus", authenciate, async (req, res) => {
 
     try{
 
