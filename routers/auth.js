@@ -207,7 +207,7 @@ router.post("/contactus", authenciate, async (req, res) => {
 
 // logout page
 
-router.get("/logout", cors(), (req, res) => {
+router.get("/logout", (req, res) => {
     res.clearCookie('jwtoken', {
         path:'/'
     })
