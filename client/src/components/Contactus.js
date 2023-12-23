@@ -83,6 +83,7 @@ const Contactus = () => {
         headers: {
           "Content-Type":"application/json"
         },
+        credentials: 'include',
         body:JSON.stringify({name:name, email:email, phone:phone, message:message})
       });
 
