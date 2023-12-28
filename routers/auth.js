@@ -173,20 +173,20 @@ router.get("/aboutme", cors(), authenciate, (req, res) => {
 //     res.send(req.rootUser);
 // });
 
+// /getData route
 router.get("/getData", authenciate, (req, res) => {
-   
-     // Check if the user is authenticated
-     if (req.rootUser) {
+    // Check if the user is authenticated
+    if (req.rootUser) {
         console.log("Hello Home and Contact page, here we will fetch the data from Database");
         // Return the user data or any other data as needed
-       res.send(req.rootUser);
+        res.send(req.rootUser);
     } else {
-        // If the user is not authenticated, return an empty response
+        // If the user is not authenticated, return a 401 Unauthorized response
         console.log("User is not authenticated");
-        res.status(204).end();
+        res.status(401).json({ error: 'Unauthorized' });
     }
-
 });
+
 
 
 // contactus page
