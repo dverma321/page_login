@@ -11,7 +11,9 @@ const Logout = () => {
     // using promises
 
     useEffect(()=> {
-        fetch('/logout', {
+    const baseUrl = "https://logindatabase-j1ud.onrender.com"; //backend url
+        
+        fetch(`${baseUrl}/logout`, {
             method:"GET",
             headers: {
                 Accept:"application/json",
