@@ -229,14 +229,13 @@ router.post("/contactus", authenciate, async (req, res) => {
 
 router.get("/logout", (req, res) => {
     res.clearCookie('jwtoken', {
-        path:'/'
-    })
-      // After clearing the cookie, clear the rootUser from the request object
-     req.rootUser = null;
+        path: '/'
+    });
+    req.rootUser = null;
     console.log("user logout successfully...");
-    
     res.status(200).send('User Logout Successfully');
 });
+
 
 
 
