@@ -168,10 +168,26 @@ router.get("/aboutme", cors(), authenciate, (req, res) => {
 // here /getData could be any route name for Home page and Contact Us
 
 
+// router.get("/getData", authenciate, (req, res) => {
+//     console.log("Hello Contact page, here we will fetch the data from Database");
+//     res.send(req.rootUser);
+// });
+
 router.get("/getData", authenciate, (req, res) => {
-    console.log("Hello Contact page, here we will fetch the data from Database");
-    res.send(req.rootUser);
+   
+     // Check if the user is authenticated
+     if (req.rootUser) {
+        console.log("Hello Contact page, here we will fetch the data from Database");
+        // Return the user data or any other data as needed
+        res.json({ userData: req.rootUser });
+    } else {
+        // If the user is not authenticated, return an empty response
+        console.log("User is not authenticated");
+        res.status(204).end();
+    }
+
 });
+
 
 // contactus page
 
