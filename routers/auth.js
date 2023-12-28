@@ -179,7 +179,7 @@ router.get("/getData", authenciate, (req, res) => {
      if (req.rootUser) {
         console.log("Hello Home and Contact page, here we will fetch the data from Database");
         // Return the user data or any other data as needed
-        res.json({ userData: req.rootUser });
+       res.send(req.rootUser);
     } else {
         // If the user is not authenticated, return an empty response
         console.log("User is not authenticated");
