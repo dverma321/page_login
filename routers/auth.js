@@ -175,6 +175,10 @@ router.get("/aboutme", cors(), authenciate, (req, res) => {
 
 // /getData route
 router.get("/getData", authenciate, (req, res) => {
+
+    console.log("GET /getData");
+    console.log("req.rootUser:", req.rootUser);
+    
     // Check if the user is authenticated
     if (req.rootUser) {
         console.log("Hello Home and Contact page, here we will fetch the data from Database");
