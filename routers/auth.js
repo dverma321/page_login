@@ -177,7 +177,7 @@ router.get("/getData", authenciate, (req, res) => {
    
      // Check if the user is authenticated
      if (req.rootUser) {
-        console.log("Hello Contact page, here we will fetch the data from Database");
+        console.log("Hello Home and Contact page, here we will fetch the data from Database");
         // Return the user data or any other data as needed
         res.json({ userData: req.rootUser });
     } else {
