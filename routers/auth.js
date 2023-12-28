@@ -229,7 +229,11 @@ router.post("/contactus", authenciate, async (req, res) => {
 
 router.get("/logout", (req, res) => {
     res.clearCookie('jwtoken', {
-        path: '/'
+        path: '/',
+        httpOnly: true,
+        secure: true,
+        sameSite: 'none',
+        credentials: 'include'
     });
     req.rootUser = null;
     console.log("user logout successfully...");
