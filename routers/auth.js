@@ -241,6 +241,22 @@ router.get("/logout", (req, res) => {
 });
 
 
+// paid software
+
+router.get("/paidsoftwares", cors(), authenciate, async (req, res) => {
+    // Check if the user is authenticated
+    if (req.rootUser) {
+        console.log("Hello Paid Software page, here we will fetch the data from Database");
+        // Return the user data or any other data as needed
+        res.send(req.rootUser);
+    } else {
+        // If the user is not authenticated, redirect to the login page
+        console.log("User is not authenticated");
+        res.redirect("/signin"); // Adjust the redirect path based on your route structure
+    }
+});
+
+
 
 
 module.exports = router;
