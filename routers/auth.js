@@ -243,7 +243,7 @@ router.get("/logout", (req, res) => {
 
 // paid software
 
-router.get("/paidsoftwares", cors(), authenciate, async (req, res) => {
+router.get("/paidsoftwares", authenciate, async (req, res) => {
     // Check if the user is authenticated
     if (req.rootUser) {
         console.log("Hello Paid Software page, here we will fetch the data from Database");
